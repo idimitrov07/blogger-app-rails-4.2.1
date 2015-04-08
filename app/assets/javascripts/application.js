@@ -11,6 +11,8 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.autosize
+//= require jquery.hashtags
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
