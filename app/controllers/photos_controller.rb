@@ -17,7 +17,7 @@ class PhotosController < ApplicationController
   def create
     @photo = Photo.new(photo_params)
     @photo.save
-    flash.notice = "You added a photo '#{@photo.title}'!"
+    flash.notice = "You added a '#{@photo.title}' photo!"
     redirect_to photos_path
   end
 
