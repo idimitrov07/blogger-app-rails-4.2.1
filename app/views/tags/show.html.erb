@@ -6,6 +6,8 @@
     </li>
   <% end %>
   <% @tag.photos.each do |photo| %>
-    <%= link_to photo.title, photo_path(photo) %>
+   <li>
+     <%= link_to photo.title, photo_path(photo) %>
+   </li>
   <% end %>
 </ul>
