@@ -8,7 +8,7 @@
 <br>
 
 <h3>Comments (<%= @article.comments.size %>)</h3>
-<%= render partial: 'articles/comment', collection: @article.comments.desc %>
+<%= render partial: 'comments/comment', collection: @article.comments.desc %>
 
 <%= render partial: 'comments/form' %>
 

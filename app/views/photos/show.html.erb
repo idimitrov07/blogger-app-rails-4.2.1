@@ -1,2 +1,10 @@
 <h1><%= @photo.title %></h1>
 <%= render partial: 'tags/tags' %>
+
+
+<h3>Comments (<%= @photo.comments.size %>)</h3>
+
+<%= render partial: 'comments/comment', collection: @photo.comments.desc %>
+<%= render partial: 'comments/form' %>
+
+<%= link_to "<< back to photo list", photos_path %>

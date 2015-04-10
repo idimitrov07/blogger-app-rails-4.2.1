@@ -4,8 +4,8 @@
 	<% @articles.each do |article| %>
 		<li>
 			<%= link_to article.title, article_path(article), class: 'article_title', id: "article_#{article.id}" %> -
-			<small><%= time_ago_in_words(article.updated_at) %> ago</small> <br>
-			<i><%= article.body %></i>
+			<i><%= time_ago_in_words(article.updated_at) %> ago</i> <br>
+			<%= article.body %>
 		</li>
 	<% end %>
 </ul>

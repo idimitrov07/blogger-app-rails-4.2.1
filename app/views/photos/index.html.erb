@@ -3,8 +3,12 @@
 <ul id="articles">
   <% @photos.each do |photo| %>
     <li>
-      <%= link_to photo.title, photo_path(photo), class: 'article_title' %> <br>
+      <%= link_to photo.title, photo_path(photo), class: 'article_title' %> -
+      <i><%= time_ago_in_words(photo.created_at) %> ago</i>
+      <br>
       <small><%= photo.body %></small>
     </li>
   <% end %>
 </ul>
+
+<%= link_to "Post a new Photo post", new_photo_path, class: 'new_article' %>
