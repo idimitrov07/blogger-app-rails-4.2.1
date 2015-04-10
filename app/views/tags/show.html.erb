@@ -1,8 +1,11 @@
-<h1>Articles tagged with <i><%= @tag.name %></i></h1>
+<h1>Articles and Photos tagged with <i><%= @tag.name %></i></h1>
 <ul>
   <% @tag.articles.each do |article| %>
     <li>
       <%= link_to article.title, article_path(article) %>
     </li>
+  <% end %>
+  <% @tag.photos.each do |photo| %>
+    <%= link_to photo.title, photo_path(photo) %>
   <% end %>
 </ul>

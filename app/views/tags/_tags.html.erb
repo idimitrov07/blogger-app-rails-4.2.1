@@ -1,0 +1,8 @@
+<p>
+  Tags:
+  <% (@article || @photo).tags.each do |tag| %>
+    <i><%= link_to tag.name, tag_path(tag) %></i>
+  <% end %>
+</p>
+<p><%= (@article || @photo).body %></p>
+<hr>

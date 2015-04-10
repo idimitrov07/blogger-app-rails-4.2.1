@@ -1,12 +1,5 @@
 <h1><%= @article.title %></h1>
-<p>
-  Tags:
-  <% @article.tags.each do |tag| %>
-    <i><%= link_to tag.name, tag_path(tag) %></i>
-  <% end %>
-</p>
-<p><%= @article.body %></p>
-<hr>
+<%= render partial: 'tags/tags' %>
 
 <p>
   <%= link_to "Edit article", edit_article_path(@article) %>
