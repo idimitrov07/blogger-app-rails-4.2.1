@@ -1,6 +1,9 @@
 <h1><%= @photo.title %></h1>
 <%= render partial: 'tags/tags' %>
 
+<% if @photo.url %>
+  <%= image_tag @photo.url, class: 'photo' %>
+<% end %>
 
 <h3>Comments (<%= @photo.comments.size %>)</h3>
 

@@ -6,7 +6,10 @@
       <%= link_to photo.title, photo_path(photo), class: 'article_title' %> -
       <i><%= time_ago_in_words(photo.created_at) %> ago</i>
       <br>
-      <small><%= photo.body %></small>
+      <small><%= photo.body %></small> <br>
+      <% if photo.url %>
+        <%= image_tag photo.url, class: 'photo' %>
+      <% end %>
     </li>
   <% end %>
 </ul>
