@@ -1,0 +1,11 @@
+<ul>
+  <% @activities.each do |activity| %>
+    <li>
+      <%= link_to activity.title, path(activity) %> <br>
+      <%= activity.body %>
+      <% if activity_img?(activity) %>
+        <%= image_tag activity.url, class: 'photo' %>
+      <% end %>
+    </li>
+  <% end %>
+</ul>

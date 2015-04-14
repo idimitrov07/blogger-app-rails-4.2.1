@@ -12,6 +12,7 @@ module Taggable
   end
 
 
+
   protected
     def set_tags
       tag_names = body.downcase.split.find_all{|word| /^#.+/.match word}.uniq
