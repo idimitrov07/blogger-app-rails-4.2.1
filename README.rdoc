@@ -1,6 +1,6 @@
 == Rails 4.2 Blogger app
 == Homework for Hack Bulgaria Ruby on Rails course - week 3
-https://github.com/HackBulgaria/Ruby-on-Rails-1/tree/master/week3/2-extend-the-blog
+https://github.com/HackBulgaria/Ruby-on-Rails-1/tree/master/week3/micro-blog
 
 Simple blogger app with posts and comments.
 
