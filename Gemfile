@@ -30,7 +30,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 #gem 'unicorn'
 
 #better webserver
-#gem 'thin'
+gem 'thin'
 
 #paprclip gem for uploading photos
 gem 'paperclip'
