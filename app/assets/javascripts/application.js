@@ -16,12 +16,3 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-
-
-//add hashtag visual notfication in article and photo body
-var ready = function(){
-  $('.hashtag_textarea').hashtags();
-}
-
-$(document).ready(ready);
-$(document).on('page:load', ready);

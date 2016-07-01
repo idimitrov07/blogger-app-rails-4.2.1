@@ -1,11 +1,17 @@
-<ul>
-  <% @activities.each do |activity| %>
-    <li>
-      <%= link_to activity.title, path(activity) %> <br>
-      <%= activity.body %>
-      <% if activity_img?(activity) %>
-        <%= image_tag activity.url, class: 'photo' %>
-      <% end %>
-    </li>
-  <% end %>
-</ul>
+<div class="posts">
+  <h1 class="content-subhead">
+    Recent posts
+  </h1>
+<% @activities.each do |activity| %>
+  <section class="post">
+    <header class="post-header">
+      <h2 class="post-title"><%= link_to activity.title, path(activity) %></h2>
+    </header>
+
+    <%= activity.body %>
+    <% if activity_img?(activity) %>
+      <%= image_tag activity.url, class: 'photo' %>
+    <% end %>
+  </section>
+<% end %>
+</div>
