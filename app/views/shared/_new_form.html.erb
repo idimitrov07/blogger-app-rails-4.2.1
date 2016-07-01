@@ -1,0 +1,21 @@
+<%= form_for(activity, html: { class: "pure-form pure-form-stacked" }) do |f| %>
+	<fieldset>
+		<%= f.label :title %>
+		<%= f.text_field :title %>
+
+    <% if controller_name == 'photos' %>
+      <%= f.label :url, "Image Url" %>
+      <%= f.text_field :url %>
+    <% end %>
+
+		<%= f.label :body %>
+		<%= f.text_area :body, class: 'hashtag_textarea' %>
+		<br>
+		<%= f.submit class: "pure-button pure-button-primary" %>
+	</fieldset>
+<% end %>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("textarea.hashtag_textarea").hashtags();
+	});
+</script>
