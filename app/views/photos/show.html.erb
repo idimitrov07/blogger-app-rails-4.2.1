@@ -5,6 +5,12 @@
   <%= image_tag @photo.url, class: 'photo' %>
 <% end %>
 
+<p>
+  <%= link_to "Edit photo post", edit_photo_path(@photo) %>
+  <%= link_to "Delete photo post", photo_path(@photo), method: :delete %>
+</p>
+<br>
+
 <h3>Comments (<%= @photo.comments.size %>)</h3>
 
 <%= render partial: 'comments/comment', collection: @photo.comments.desc %>

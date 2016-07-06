@@ -19,4 +19,9 @@ class Article < ActiveRecord::Base
   #   self.tags = new_or_found_tags
   # end
 
+  has_attached_file :image
+  validates_attachment_content_type :image, content_type: ['image/jpg',
+                                                           'image/jpeg',
+                                                           'image/png']
+
 end

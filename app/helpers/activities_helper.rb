@@ -11,9 +11,4 @@ module ActivitiesHelper
   def activity_img?(activity)
     Photo.all.include? activity
   end
-
-  def activity_text(value)
-    value.delete '#'
-  end
-
 end

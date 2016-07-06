@@ -4,5 +4,5 @@
     <i><%= link_to tag.name, tag_path(tag) %></i>
   <% end %>
 </p>
-<p><%= (@article || @photo).body %></p>
+<p><%= activity_text((@article || @photo).body) %></p>
 <hr>
