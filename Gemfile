@@ -34,6 +34,7 @@ gem 'thin'
 
 #paprclip gem for uploading photos
 gem 'paperclip'
+gem 'sorcery'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
